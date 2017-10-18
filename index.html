@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="viewport" content="user-scalable=no, width=device-width" />
+<meta name=”viewport” content=”user-scalable=no”/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+
+<link type="text/css" rel="stylesheet" href="css/swiper-3.4.0.min.css">
+<link type="text/css" rel="stylesheet" href="css/public.css">
+<link type="text/css" rel="stylesheet" href="css/discover.css">
+
+<title>发现</title>
+
+<script type="text/javascript">
+
+(function (doc, win) {
+    var _root = doc.documentElement,
+        resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        resizeCallback = function () {
+            var clientWidth = _root.clientWidth,
+                fontSize = 20;
+            if (!clientWidth) return;
+            if(clientWidth < 640) {
+                fontSize = 20 * (clientWidth / 320);
+            } else {
+                fontSize = 20 * (640 / 320);
+            }
+            _root.style.fontSize = fontSize + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvent, resizeCallback, false);
+    doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+})(document, window);
+
+</script>
+
+</head>
+
+<body>
+
+<div class="zhuti">
+
+  <div class="content">
+    <!-- banner轮播 -->
+    <div class="discover_banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="images/banner.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="images/banner.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="images/banner.png" alt="">
+              </a>
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+
+  <!-- 加精 -->
+  <div class="discover_add_jing">
+      <ul class="discover_add_jing_ul">
+        <li>
+          <div class="discover_add_jing_li_l">
+            <img src="images/touxiang.png" alt="">
+          </div>
+          <div class="discover_add_jing_li_r">
+
+            <div class="discover_add_jing_li_r_t">
+              <div class="discover_add_jing_li_r_t_l">
+                意外艺术
+              </div>
+              <div class="discover_add_jing_li_r_t_r">
+                4分钟前
+              </div>
+            </div>
+
+            <div class="discover_add_jing_li_r_c clearfloat">
+              <img class="jing_img" src="images/ggg.png" alt="">
+              <h3 class="add_jing_title">儿子，妈妈为什么要你有个信仰？</h3>
+            </div>
+
+            <div class="discover_add_jing_li_r_b">
+              <div class="discover_add_jing_li_r_b_l">
+                浏览<span class="lldz_span">4.6K</span>
+              </div>
+              <div class="discover_add_jing_li_r_b_r">
+                点赞<span class="lldz_span">4.6K</span>
+              </div>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 加精有缩略图 -->
+
+    <div class="discover_add_jing">
+      <ul class="discover_add_jing_ul">
+        <li>
+          <div class="discover_add_jing_li_l">
+            <img src="images/touxiang.png" alt="">
+          </div>
+          <div class="discover_add_jing_li_r">
+
+            <div class="discover_add_jing_li_r_t">
+              <div class="discover_add_jing_li_r_t_l">
+                意外艺术
+              </div>
+              <div class="discover_add_jing_li_r_t_r">
+                4分钟前
+              </div>
+            </div>
+
+            <div class="discover_add_jing_li_r_c discover_add_jing_none_li_r_c">
+              <div class="discover_add_jing_li_r_c_l">
+                <div class="discover_add_jing_li_r_c_l_t clearfloat">
+                  <img class="jing_img" src="images/ggg.png" alt="">
+                  <h3 class="add_jing_title">儿子，妈妈为什么要你有个信仰？</h3>
+                </div>
+                <div class="discover_add_jing_li_r_c_l_b ">
+                  <div class="discover_add_jing_li_r_b_l">
+                    浏览<span class="lldz_span">4.6K</span>
+                  </div>
+                  <div class="discover_add_jing_li_r_b_r">
+                    点赞<span class="lldz_span">4.6K</span>
+                  </div>
+                </div>
+              </div>
+              <div class="discover_add_jing_li_r_c_r">
+                <img src="images/kly.png" alt="">
+              </div>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 无加精加热 -->
+    <div class="discover_add_jing">
+      <ul class="discover_add_jing_ul">
+        <li>
+          <div class="discover_add_jing_li_l">
+            <img src="images/touxiang.png" alt="">
+          </div>
+          <div class="discover_add_jing_li_r">
+
+            <div class="discover_add_jing_li_r_t">
+              <div class="discover_add_jing_li_r_t_l">
+                意外艺术
+              </div>
+              <div class="discover_add_jing_li_r_t_r">
+                4分钟前
+              </div>
+            </div>
+
+            <div class="discover_add_jing_li_r_c">
+              <h3 class="add_jing_title">儿子，妈妈为什么要你有个信仰？</h3>
+            </div>
+
+            <div class="discover_add_jing_li_r_b">
+              <div class="discover_add_jing_li_r_b_l">
+                浏览<span class="lldz_span">4.6K</span>
+              </div>
+              <div class="discover_add_jing_li_r_b_r">
+                点赞<span class="lldz_span">4.6K</span>
+              </div>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 加热 -->
+
+    <div class="discover_add_jing">
+      <ul class="discover_add_jing_ul">
+        <li>
+          <div class="discover_add_jing_li_l">
+            <img src="images/touxiang.png" alt="">
+          </div>
+          <div class="discover_add_jing_li_r">
+
+            <div class="discover_add_jing_li_r_t">
+              <div class="discover_add_jing_li_r_t_l">
+                意外艺术
+              </div>
+              <div class="discover_add_jing_li_r_t_r">
+                4分钟前
+              </div>
+            </div>
+
+            <div class="discover_add_jing_li_r_c discover_add_jing_none_li_r_c">
+              <div class="discover_add_jing_li_r_c_l">
+                <div class="discover_add_jing_li_r_c_l_t">
+                  <img class="jing_img" src="images/tyuj.png" alt="">
+                  <h3 class="add_jing_title">儿子，妈妈为什么要你有个信仰？</h3>
+                </div>
+                <div class="discover_add_jing_li_r_c_l_b">
+                  <div class="discover_add_jing_li_r_b_l">
+                    浏览<span class="lldz_span">4.6K</span>
+                  </div>
+                  <div class="discover_add_jing_li_r_b_r">
+                    点赞<span class="lldz_span">4.6K</span>
+                  </div>
+                </div>
+              </div>
+              <div class="discover_add_jing_li_r_c_r">
+                <img src="images/kly.png" alt="">
+              </div>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 底部导航 -->
+    <div class="bottom_nav clearfloat">
+
+      <div class="bottom_nav_con bottom_nav_con_block">
+        <a href="index.html">
+          <div class="bottom_nav_con_t">
+            <div class="bottom_nav_con_t_01">
+              <img src="images/discover01.png" alt="">
+            </div>
+            <div class="bottom_nav_con_t_02">
+              <img src="images/discover02.png" alt="">
+            </div>
+          </div>
+          <div class="bottom_nav_con_b">
+            发现
+          </div>
+        </a>
+      </div>
+
+      <div class="bottom_nav_con">
+        <a href="study.html">
+          <div class="bottom_nav_con_t">
+            <div class="bottom_nav_con_t_01">
+              <img src="images/xuexi01.png" alt="">
+            </div>
+            <div class="bottom_nav_con_t_02">
+              <img src="images/xuexi02.png" alt="">
+            </div>
+          </div>
+          <div class="bottom_nav_con_b">
+            学习
+          </div>
+        </a>
+      </div>
+
+      <div class="bottom_nav_con">
+        <a href="write.html">
+          <div class="bottom_nav_con_t">
+            <div class="bottom_nav_con_t_01">
+              <img src="images/xiezuo01.png" alt="">
+            </div>
+            <div class="bottom_nav_con_t_02">
+              <img src="images/xiezuo02.png" alt="">
+            </div>
+          </div>
+          <div class="bottom_nav_con_b">
+            写作
+          </div>
+        </a>
+      </div>
+
+      <div class="bottom_nav_con">
+        <a href="message.html">
+          <div class="bottom_nav_con_t">
+            <div class="bottom_nav_con_t_01">
+              <img src="images/xiaoxi01.png" alt="">
+            </div>
+            <div class="bottom_nav_con_t_02">
+              <img src="images/xiaoxi02.png" alt="">
+            </div>
+            <!-- 消息红点 -->
+            <div class="red_dot"></div>
+          </div>
+          <div class="bottom_nav_con_b">
+            消息
+          </div>
+        </a>
+      </div>
+
+      <div class="bottom_nav_con">
+        <a href="mine.html">
+          <div class="bottom_nav_con_t">
+            <div class="bottom_nav_con_t_01">
+              <img src="images/wode01.png" alt="">
+            </div>
+            <div class="bottom_nav_con_t_02">
+              <img src="images/wode02.png" alt="">
+            </div>
+          </div>
+          <div class="bottom_nav_con_b">
+            我的
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.0.jquery.min.js"></script>
+<script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    autoplay : 3000,
+    autoplayDisableOnInteraction:false,
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+
+  })
+  $('.bottom_nav_con').click(function(event) {
+    $(this).addClass('bottom_nav_con_block');
+    $(this).siblings().removeClass('bottom_nav_con_block')
+  });
+</script>
+
+</div>
+
+</body>
+
+
+</html>

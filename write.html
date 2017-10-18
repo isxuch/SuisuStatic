@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="viewport" content="user-scalable=no, width=device-width" />
+<meta name=”viewport” content=”user-scalable=no”/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+
+<link type="text/css" rel="stylesheet" href="css/public.css">
+<link type="text/css" rel="stylesheet" href="css/write.css">
+
+<title>写作</title>
+
+<script type="text/javascript">
+
+(function (doc, win) {
+    var _root = doc.documentElement,
+        resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        resizeCallback = function () {
+            var clientWidth = _root.clientWidth,
+                fontSize = 20;
+            if (!clientWidth) return;
+            if(clientWidth < 640) {
+                fontSize = 20 * (clientWidth / 320);
+            } else {
+                fontSize = 20 * (640 / 320);
+            }
+            _root.style.fontSize = fontSize + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvent, resizeCallback, false);
+    doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+})(document, window);
+
+</script>
+
+</head>
+
+<body>
+
+<div class="zhuti">
+
+  <div class="content">
+
+    <!-- 标签 -->
+    <div class="write_label">
+      <div class="write_label_l">
+        <div class="label_butt">标签</div>
+        <div class="label_list">作业</div>
+        <div class="label_list">练习</div>
+      </div>
+      <div class="write_label_r">
+        <img src="images/more.png" alt="">
+        <div class="tanchu_area">
+          <div class="tanchu_area_t">
+            <img src="images/Triangle .png" alt="">
+          </div>
+          <div class="tanchu_area_b">
+            <ul class="tanchu_area_b_ul">
+              <li class="issue">发布</li>
+              <li class="draft">存草稿</li>
+              <li class="delete">删除</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 标题 -->
+    <div class="write_title">
+      <input class="write_title_inp" type="text" name="" value="" placeholder="请输入您的标题">
+    </div>
+
+    <!-- 写作区域 -->
+    <div class="write_area">
+      <textarea class="write_area_text" name="name" placeholder="请输入您的内容"></textarea>
+    </div>
+
+    <!-- 底部导航 -->
+    <div class="bottom_nav clearfloat">
+
+      <div class="bottom_nav_con">
+        <a href="index.html">
+          <div class="bottom_nav_con_t">
+            <div class="bottom_nav_con_t_01">
+              <img src="images/discover01.png" alt="">
+            </div>
+            <div class="bottom_nav_con_t_02">
+              <img src="images/discover02.png" alt="">
+            </div>
+          </div>
+          <div class="bottom_nav_con_b">
+            发现
+          </div>
+        </a>
+      </div>
+
+      <div class="bottom_nav_con">
+        <a href="study.html">
+          <div class="bottom_nav_con_t">
+            <div class="bottom_nav_con_t_01">
+              <img src="images/xuexi01.png" alt="">
+            </div>
+            <div class="bottom_nav_con_t_02">
+              <img src="images/xuexi02.png" alt="">
+            </div>
+          </div>
+          <div class="bottom_nav_con_b">
+            学习
+          </div>
+        </a>
+      </div>
+
+      <div class="bottom_nav_con bottom_nav_con_block">
+        <a href="write.html">
+          <div class="bottom_nav_con_t">
+            <div class="bottom_nav_con_t_01">
+              <img src="images/xiezuo01.png" alt="">
+            </div>
+            <div class="bottom_nav_con_t_02">
+              <img src="images/xiezuo02.png" alt="">
+            </div>
+          </div>
+          <div class="bottom_nav_con_b">
+            写作
+          </div>
+        </a>
+      </div>
+
+      <div class="bottom_nav_con">
+        <a href="message.html">
+          <div class="bottom_nav_con_t">
+            <div class="bottom_nav_con_t_01">
+              <img src="images/xiaoxi01.png" alt="">
+            </div>
+            <div class="bottom_nav_con_t_02">
+              <img src="images/xiaoxi02.png" alt="">
+            </div>
+            <!-- 消息红点 -->
+            <div class="red_dot"></div>
+          </div>
+          <div class="bottom_nav_con_b">
+            消息
+          </div>
+        </a>
+      </div>
+
+      <div class="bottom_nav_con">
+        <a href="mine.html">
+          <div class="bottom_nav_con_t">
+            <div class="bottom_nav_con_t_01">
+              <img src="images/wode01.png" alt="">
+            </div>
+            <div class="bottom_nav_con_t_02">
+              <img src="images/wode02.png" alt="">
+            </div>
+          </div>
+          <div class="bottom_nav_con_b">
+            我的
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="layer_mobile/layer.js"></script>
+<script>
+  $('.bottom_nav_con').click(function(event) {
+    $(this).addClass('bottom_nav_con_block');
+    $(this).siblings().removeClass('bottom_nav_con_block')
+  });
+  //点击写作按钮
+  $('.write_label_r').click(function(event) {
+    if($('.tanchu_area').hasClass('tanchu_area_block')){
+      $('.tanchu_area').removeClass('tanchu_area_block')
+    }else{
+      $('.tanchu_area').addClass('tanchu_area_block')
+    }
+    $('.tanchu_area').addClass('animated flipInX');
+  });
+  //点击发布询问
+  $('.issue').click(function(event) {
+    layer.open({
+      content: '您确定要发布么？',
+      btn: ['确定', '取消'],
+      yes: function(index){
+        layer.open({content: '发布成功！',time:2,skin:'msg'})
+        layer.close(index);
+      }
+    });
+  });
+  //存草稿
+  $('.draft').click(function(event) {
+    layer.open({
+      content: '您确定要存为草稿吗？',
+      btn: ['确定', '取消'],
+      yes: function(index){
+        layer.open({content: '为草稿成功！',time:2,skin:'msg'})
+        layer.close(index);
+      }
+    });
+  });
+  //删除
+  $('.delete').click(function(event) {
+    layer.open({
+      content: '您确定要删除吗？',
+      btn: ['确定', '取消'],
+      yes: function(index){
+        layer.open({content: '删除成功...',time:2,skin:'msg'})
+        layer.close(index);
+      }
+    });
+  });
+</script>
+
+</div>
+
+</body>
+
+
+</html>
