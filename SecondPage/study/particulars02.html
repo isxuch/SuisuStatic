@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="viewport" content="user-scalable=no, width=device-width" />
+<meta name=”viewport” content=”user-scalable=no”/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+
+<link type="text/css" rel="stylesheet" href="../../css/swiper-3.4.0.min.css">
+<link type="text/css" rel="stylesheet" href="../../css/public.css">
+<link type="text/css" rel="stylesheet" href="../../css/study_par.css">
+
+<title>课程详情--未购买</title>
+
+<script type="text/javascript">
+
+(function (doc, win) {
+    var _root = doc.documentElement,
+        resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        resizeCallback = function () {
+            var clientWidth = _root.clientWidth,
+                fontSize = 20;
+            if (!clientWidth) return;
+            if(clientWidth < 640) {
+                fontSize = 20 * (clientWidth / 320);
+            } else {
+                fontSize = 20 * (640 / 320);
+            }
+            _root.style.fontSize = fontSize + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvent, resizeCallback, false);
+    doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+})(document, window);
+
+</script>
+
+</head>
+
+<body>
+
+<div class="zhuti">
+
+  <div class="content content_wgm">
+
+    <!-- banner轮播 -->
+    <div class="discover_banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="../../images/banner3.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="../../images/banner2.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="../../images/banner.png" alt="">
+              </a>
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- 课程描述 -->
+    <div class="kcms">
+      <h3 class="kcms_title">当不成AK48 成员的我，只想光明正大的做一滩烂泥</h3>
+      <div class="issue_time">10-20 14:24</div>
+      <div class="kcms_introduce">这不仅仅是一篇经验，而是前辈用日积月累得工作心得，用笔记用脑想，最重要得是要走心。还有我是占位符不是简介。</div>
+      <div class="kc_xx">课程描述</div>
+      <div class="kc_content">
+        <p>还是曾经濒临破产的新一代女性情感大师“咪蒙” 或者是曾经辞职在家全职带娃的年糕妈妈创始人“李丹阳”</p>
+        <p>还是曾经濒临破产的新一代女性情感大师“咪蒙” 或者是曾经辞职在家全职带娃的年糕妈妈创始人“李丹阳”</p>
+        <img src="../../images/image2.png" alt="">
+        <p>还是曾经濒临破产的新一代女性情感大师“咪蒙” 或者是曾经辞职在家全职带娃的年糕妈妈创始人“李丹阳”</p>
+        <p>还是曾经濒临破产的新一代女性情感大师“咪蒙” 或者是曾经辞职在家全职带娃的年糕妈妈创始人“李丹阳”</p>
+      </div>
+      <div class="kc_zkan">
+        <img src="../../images/open.png" alt="">
+      </div>
+    </div>
+
+    <!-- 自定义插图 -->
+    <div class="zdyct">
+      <img src="../../images/smewm.png" alt="">
+    </div>
+
+
+  <!-- 悬浮回首页 -->
+  <div class="xuanfu">
+    <div class="xuanfu_l">
+      <img src="../../images/xuanfu.png" alt="">
+    </div>
+    <div class="xuanfu_r">首页</div>
+  </div>
+
+</div>
+
+<!-- 立即购买按钮 -->
+
+<div class="ljgm">立即购买¥299</div>
+
+<!-- 支付详情 -->
+
+<div class="zhezhao"></div>
+
+<div class="zhxq">
+  <div class="zhxq_title">
+    <div class="zhxq_title_l">课程名称</div>
+    <div class="zhxq_title_r">当不成AK48 成员的我，只...</div>
+  </div>
+  <div class="zhxq_title">
+    <div class="zhxq_title_l">课程价格</div>
+    <div class="zhxq_title_r">¥200</div>
+  </div>
+  <div class="zhxq_title">
+    <div class="zhxq_title_l">总价</div>
+    <div class="zhxq_title_r zj_price">¥365</div>
+  </div>
+  <div class="fwxy">点击立即支付代表阅读并同意<span>《用户购买协议》</span></div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/swiper-3.4.0.jquery.min.js"></script>
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+  direction: 'horizontal',
+  loop: true,
+  autoplay : 3000,
+  autoplayDisableOnInteraction:false,
+  // 如果需要分页器
+  pagination: '.swiper-pagination',
+
+})
+$('.bottom_nav_con').click(function(event) {
+  $(this).addClass('bottom_nav_con_block');
+  $(this).siblings().removeClass('bottom_nav_con_block')
+});
+
+//展开阅读内容
+$('.kc_zkan').click(function(event) {
+  if($('.kc_content').hasClass('kc_content_zk')){
+    $('.kc_content').removeClass('kc_content_zk');
+    $(this).find('img').attr('src','../../images/open.png');
+  }else{
+    $('.kc_content').addClass('kc_content_zk');
+    $(this).find('img').attr('src','../../images/stop.png');
+  }
+});
+
+
+</script>
+
+
+</div>
+
+</body>
+
+
+</html>
