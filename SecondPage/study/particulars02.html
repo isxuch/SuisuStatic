@@ -120,20 +120,57 @@
 <div class="zhezhao"></div>
 
 <div class="zhxq">
-  <div class="zhxq_title">
-    <div class="zhxq_title_l">课程名称</div>
-    <div class="zhxq_title_r">当不成AK48 成员的我，只...</div>
+  <div class="zhxq_one">
+    <div class="zhxq_title">
+      <div class="zhxq_title_l">课程名称</div>
+      <div class="zhxq_title_r">当不成AK48 成员的我，只...</div>
+    </div>
+    <div class="zhxq_title">
+      <div class="zhxq_title_l">课程价格</div>
+      <div class="zhxq_title_r">¥200</div>
+    </div>
+    <div class="zhxq_title">
+      <div class="zhxq_title_l">总价</div>
+      <div class="zhxq_title_r zj_price">¥365</div>
+    </div>
+    <div class="fwxy">点击立即支付代表阅读并同意<span>《用户购买协议》</span></div>
+    <div class="gmnf">
+      <div class="gmnf_l vip_xz">
+        <div class="gmnf_l_l">
+          <div class="gmnf_l_l_t">
+            <img src="../../images/none_zt.png" alt="">
+          </div>
+          <div class="gmnf_l_l_b">
+            <img src="../../images/acitv_zt.png" alt="">
+          </div>
+          <!-- <img src="../../images/acitv_zt.png" alt=""> -->
+        </div>
+        <div class="gmnf_l_r">
+          购买年费会员<span>购买年费会员</span>
+        </div>
+      </div>
+      <div class="gmnf_r">
+        <div class="gmnf_r_l">
+          <div class="gmnf_r_l_t">
+            <img src="../../images/none_zt.png" alt="">
+          </div>
+          <div class="gmnf_r_l_b">
+            <img src="../../images/acitv_zt.png" alt="">
+          </div>
+          <!-- <img src="../../images/none_zt.png" alt=""> -->
+        </div>
+        <div class="gmnf_r_r">
+          购买单次课程
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="zhxq_title">
-    <div class="zhxq_title_l">课程价格</div>
-    <div class="zhxq_title_r">¥200</div>
+  <div class="zhxq_two">
+    <div class="ljgmkc">立即支付</div>
   </div>
-  <div class="zhxq_title">
-    <div class="zhxq_title_l">总价</div>
-    <div class="zhxq_title_r zj_price">¥365</div>
-  </div>
-  <div class="fwxy">点击立即支付代表阅读并同意<span>《用户购买协议》</span></div>
 </div>
+
+
 
 <script type="text/javascript" src="../../js/jquery.min.js"></script>
 <script type="text/javascript" src="../../js/swiper-3.4.0.jquery.min.js"></script>
@@ -163,6 +200,21 @@ $('.kc_zkan').click(function(event) {
   }
 });
 
+//购买课程选项选择
+$('.gmnf_l,.gmnf_r').click(function(event) {
+  $(this).addClass('vip_xz');
+  $(this).siblings().removeClass('vip_xz')
+});
+
+//弹出支付框
+$('.ljgm').click(function(){
+  $('.zhezhao').css('display','block');
+  $('.zhxq').css('bottom','0');
+})
+$('.zhezhao').click(function(event) {
+  $(this).css('display','none');
+  $('.zhxq').css('bottom','-13rem');
+});
 
 </script>
 

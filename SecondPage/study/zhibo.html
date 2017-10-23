@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="viewport" content="user-scalable=no, width=device-width" />
+<meta name=”viewport” content=”user-scalable=no”/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+
+<link type="text/css" rel="stylesheet" href="../../css/public.css">
+<link type="text/css" rel="stylesheet" href="../../css/zhibo.css">
+
+<title>直播详情</title>
+
+<script type="text/javascript">
+
+(function (doc, win) {
+    var _root = doc.documentElement,
+        resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        resizeCallback = function () {
+            var clientWidth = _root.clientWidth,
+                fontSize = 20;
+            if (!clientWidth) return;
+            if(clientWidth < 640) {
+                fontSize = 20 * (clientWidth / 320);
+            } else {
+                fontSize = 20 * (640 / 320);
+            }
+            _root.style.fontSize = fontSize + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvent, resizeCallback, false);
+    doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+})(document, window);
+
+</script>
+
+</head>
+
+<body>
+
+<div class="zhuti">
+
+  <div class="content">
+
+    <!-- 直播头部 -->
+    <div class="zhibo_top">
+      <img src="../../images/banner3.png" alt="">
+      <audio class="audio_xx" preload="preload" controls="controls" src="http://so1.111ttt.com:8282/2017/4/05m/10/298101104389.m4a?#.mp3" controls="controls"></audio>
+    </div>
+    <!-- 上课资料 -->
+    <div class="skzl">
+      <div class="skzl_t">上课资料</div>
+      <div class="skzl_b">
+        <p>这不仅仅是一篇经验，而是前辈用日积月累得工作心得，用笔记用脑想，最重要得是要走心。还有我是占位符不是简介。</p>
+        <p>这不仅仅是一篇经验，而是前辈用日积月累得工作心得，用笔记用脑想，最重要得是要走心。还有我是占位符不是简介。</p>
+        <img src="../../images/image2.png" alt="">
+        <p>这不仅仅是一篇经验，而是前辈用日积月累得工作心得，用笔记用脑想，最重要得是要走心。还有我是占位符不是简介。</p>
+      </div>
+    </div>
+
+    <!-- 作业 -->
+    <div class="zuoye">
+      <div class="zuoye_t">上完课了吗？来做一下测试吧</div>
+      <div class="zuoye_b">
+        <ul class="zuoye_b_ul">
+          <li>五步写作重点，今天你掌握了吗？</li>
+          <li>五步写作重点，今天你掌握了吗？</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 作业 -->
+    <div class="zuoye">
+      <div class="zuoye_t">上完课了吗？来做一下测试吧</div>
+      <div class="zuoye_b">
+        <ul class="zuoye_b_ul">
+          <li>五步写作重点，今天你掌握了吗？</li>
+          <li>五步写作重点，今天你掌握了吗？</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+  <!-- 悬浮回首页 -->
+  <div class="xuanfu">
+    <div class="xuanfu_l">
+      <img src="../../images/xuanfu.png" alt="">
+    </div>
+    <div class="xuanfu_r">首页</div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+
+
+</html>
