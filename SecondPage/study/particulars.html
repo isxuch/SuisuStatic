@@ -285,17 +285,17 @@ if($('.work_list_dl').css('display')=='none'){
 }
 $('.work_zkan').click(function(event) {
   if($(this).siblings().find('.work_list_dl').css('display')=='none'){
-    $(this).siblings().find('.work_list_dl').slideDown('fast');
+    $(this).siblings().find('.work_list_dl').slideDown(300);
     $(this).siblings().find('.work_list_dl dt').last().css('border','none')
     $(this).parents().find('.kcdz').css('borderBottom','1px solid #eaeaea');
     $(this).parents().siblings().find('.kcdz').css('borderBottom','none');
-    $(this).parents().siblings().find('.work_list_dl').slideUp('fast');
+    $(this).parents().siblings().find('.work_list_dl').slideUp(300);
     $(this).find('img').attr('src','../../images/stop.png');
     $(this).parents().siblings().find('.work_zkan img').attr('src','../../images/open.png');
     return false;
   }
   if($(this).siblings().find('.work_list_dl').css('display')=='block'){
-    $(this).siblings().find('.work_list_dl').slideUp('fast');
+    $(this).siblings().find('.work_list_dl').slideUp(300);
     $(this).siblings().find('.work_list_dl dt').last().css('border','none')
     $(this).parents().find('.kcdz').css('borderBottom','none');
     $(this).find('img').attr('src','../../images/open.png');
