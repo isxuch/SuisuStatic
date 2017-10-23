@@ -232,6 +232,7 @@
 .zhxq_title{
   width: 100%;
   padding:  0.85rem 0;
+  padding-bottom: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -250,6 +251,7 @@
   width: 14.8rem;
   margin: 0 auto;
   color: #999;
+  margin-top: 0.85rem;
 }
 .fwxy span{
   color: #AEA987;
