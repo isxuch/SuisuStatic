@@ -60,34 +60,6 @@
   font-size: 0.7rem;
   border-bottom: 0.05rem solid #eaeaea;
 }
-
-/*悬浮回首页*/
-.xuanfu{
-  width: 3.2rem;
-  height: 1.2rem;
-  position: fixed;
-  top: 2rem;
-  z-index: 9;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  border-bottom-right-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  background-color: rgba(0,0,0,0.4);
-}
-.xuanfu_l{
-  display: flex;
-  margin-left: 0.5rem;
-}
-.xuanfu_l img{
-  align-self: center;
-  width: 0.8rem;
-}
-.xuanfu_r{
-  color: #fff;
-  line-height: 1.2rem;
-  margin-left: 0.3rem;
-}
 /*自定义推片推广*/
 .zdyct{
   width: 100%;

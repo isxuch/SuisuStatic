@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="viewport" content="user-scalable=no, width=device-width" />
+<meta name=”viewport” content=”user-scalable=no”/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+
+<link type="text/css" rel="stylesheet" href="../../css/public.css">
+<link type="text/css" rel="stylesheet" href="../../css/test_list.css">
+
+<title>测试题目</title>
+
+<script type="text/javascript">
+
+(function (doc, win) {
+    var _root = doc.documentElement,
+        resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        resizeCallback = function () {
+            var clientWidth = _root.clientWidth,
+                fontSize = 20;
+            if (!clientWidth) return;
+            if(clientWidth < 640) {
+                fontSize = 20 * (clientWidth / 320);
+            } else {
+                fontSize = 20 * (640 / 320);
+            }
+            _root.style.fontSize = fontSize + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvent, resizeCallback, false);
+    doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+})(document, window);
+
+</script>
+
+</head>
+
+<body>
+
+<div class="zhuti">
+
+  <div class="content">
+
+    <div class="zts">
+      <div class="zts_l"></div>
+      <div class="zts_r">
+        <div class="zts_r_l">
+          如何做汇报才能升职加薪？
+        </div>
+        <div class="zts_r_r">
+          <span>1</span>/12
+        </div>
+      </div>
+    </div>
+
+    <!-- 单选题 -->
+    <div class="dxt">
+      <div class="dxt_t">1. 在下列四个选项中选择一个和自己的性格最相 符的是</div>
+      <ul class="dxt_ul danxuan">
+        <li>
+          <div class="dxt_t_li_l">A</div>
+          <div class="dxt_t_li_r">任性：做事鲁莽，缺乏理智</div>
+        </li>
+        <li>
+          <div class="dxt_t_li_l">B</div>
+          <div class="dxt_t_li_r">任性：做事鲁莽，缺乏理智</div>
+        </li>
+        <li>
+          <div class="dxt_t_li_l">C</div>
+          <div class="dxt_t_li_r">任性：做事鲁莽，缺乏理智</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 多选题 -->
+    <div class="dxt">
+      <div class="dxt_t">2. （多选题）付出许多的辛勤劳动之后，公司提升你到1个可以配车的职位，而且，作为额外奖励，你可以选择车型和款式。你会选</div>
+      <ul class="dxt_ul dxt_ul_02">
+        <li>
+          <div class="dxt_t_li_l">A</div>
+          <div class="dxt_t_li_r">任性：做事鲁莽，缺乏理智</div>
+        </li>
+        <li>
+          <div class="dxt_t_li_l">B</div>
+          <div class="dxt_t_li_r">任性：做事鲁莽，缺乏理智</div>
+        </li>
+        <li>
+          <div class="dxt_t_li_l">C</div>
+          <div class="dxt_t_li_r">任性：做事鲁莽，缺乏理智</div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- 提交按钮 -->
+  <div class="submit_an">提交</div>
+
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script>
+  $('.danxuan li').click(function(event) {
+    //$(this).find('.dxt_t_li_l').addClass('dxt_act');
+    $(this).siblings().find('.dxt_t_li_l').removeClass('dxt_act');
+    if ($(this).find('.dxt_t_li_l').hasClass('dxt_act')) {
+      $(this).find('.dxt_t_li_l').removeClass('dxt_act');
+    }else {
+      $(this).find('.dxt_t_li_l').addClass('dxt_act');
+    }
+  });
+  //多选题
+  $('.dxt_ul_02 li').click(function(event) {
+    if ($(this).find('.dxt_t_li_l').hasClass('dxt_act02')) {
+      $(this).find('.dxt_t_li_l').removeClass('dxt_act02');
+    }else {
+      $(this).find('.dxt_t_li_l').addClass('dxt_act02');
+    }
+  });
+</script>
+
+</div>
+
+</body>
+
+
+</html>
