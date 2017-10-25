@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="viewport" content="user-scalable=no, width=device-width" />
+<meta name=”viewport” content=”user-scalable=no”/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+
+<link type="text/css" rel="stylesheet" href="../../css/public.css">
+<link type="text/css" rel="stylesheet" href="../../css/feedback.css">
+
+<title>反馈</title>
+
+<script type="text/javascript">
+
+(function (doc, win) {
+    var _root = doc.documentElement,
+        resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        resizeCallback = function () {
+            var clientWidth = _root.clientWidth,
+                fontSize = 20;
+            if (!clientWidth) return;
+            if(clientWidth < 640) {
+                fontSize = 20 * (clientWidth / 320);
+            } else {
+                fontSize = 20 * (640 / 320);
+            }
+            _root.style.fontSize = fontSize + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvent, resizeCallback, false);
+    doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+})(document, window);
+
+</script>
+
+</head>
+
+<body>
+
+<div class="zhuti">
+
+  <div class="content">
+
+    <!-- 反馈区域 -->
+    <div class="feedback_area">
+      <textarea name="name" class="feedback_text" placeholder="请将你的问题，尽可能简洁的发送给，工作人员收集后，将会第一时间处理你所提出的问题(10-400)" ></textarea>
+    </div>
+
+    <!-- 联系方式 -->
+    <div class="lxfs">
+      <div class="lxfs_l">联系方式</div>
+      <div class="lxfs_r">
+        <input class="lxfs_r_input" type="text" name="" value="" placeholder="电话/邮箱/QQ/其他">
+      </div>
+    </div>
+
+    <!-- 提交 -->
+    <div class="tjfk">提交</div>
+
+  </div>
+
+  <!-- 弹框提示 -->
+  <div class="zhezhao"></div>
+  <!-- 修改昵称 -->
+  <div class="xgnc xgnc_nc animated bounceInDown">
+    <div class="xgnc_t">修改昵称</div>
+    <div class="xgnc_c">
+      退出之后您填写的内容将会被清空，您确定要退出吗 ？
+    </div>
+    <div class="xgnc_b">
+      <div class="xgnc_b_l">
+        取消
+      </div>
+      <div class="xgnc_b_r">
+        确定
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+</body>
+
+
+</html>

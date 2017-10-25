@@ -17,6 +17,9 @@
   font-size: 0.8rem;
   align-self: center;
 }
+.label_butt a{
+  font-size: 0.8rem;
+}
 .label_list{
   font-size: 0.8rem;
   align-self: center;
@@ -80,6 +83,7 @@
   height: 100%;
   line-height: 2.2rem;
   color: #666;
+  font-size: 0.7rem;
 }
 .write_area{
   width: 14.8rem;
@@ -91,6 +95,7 @@
   width: 100%;
   height: 100%;
   resize: none;
+  font-size: 0.7rem;
 }
 
 /*css动画*/

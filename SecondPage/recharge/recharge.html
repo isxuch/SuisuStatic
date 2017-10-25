@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="viewport" content="user-scalable=no, width=device-width" />
+<meta name=”viewport” content=”user-scalable=no”/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+
+<link type="text/css" rel="stylesheet" href="../../css/public.css">
+<link type="text/css" rel="stylesheet" href="../../css/recharge.css">
+
+<title>充值</title>
+
+<script type="text/javascript">
+
+(function (doc, win) {
+    var _root = doc.documentElement,
+        resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        resizeCallback = function () {
+            var clientWidth = _root.clientWidth,
+                fontSize = 20;
+            if (!clientWidth) return;
+            if(clientWidth < 640) {
+                fontSize = 20 * (clientWidth / 320);
+            } else {
+                fontSize = 20 * (640 / 320);
+            }
+            _root.style.fontSize = fontSize + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvent, resizeCallback, false);
+    doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+})(document, window);
+
+</script>
+
+</head>
+
+<body>
+
+<div class="zhuti">
+
+  <div class="content">
+
+  <!-- 充值 -->
+  <div class="recharge">
+    <div class="recharge_t">余额</div>
+    <div class="yuer">
+      <div class="yuer_l">2400</div>
+      <div class="yuer_r">元</div>
+    </div>
+  </div>
+
+  <!-- 充值按钮 -->
+  <div class="recharge_butt">充值</div>
+
+  <!-- 悬浮回首页 -->
+  <div class="xuanfu">
+    <div class="xuanfu_l">
+      <img src="../../images/xuanfu.png" alt="">
+    </div>
+    <div class="xuanfu_r">首页</div>
+  </div>
+
+  <!-- 弹出框部分 -->
+  <div class="zhezhao"></div>
+  <div class="tck">
+    <div class="tck_t">充值</div>
+    <div class="jr_list">
+      <ul class="jr_list_ul">
+        <li>
+          <div class="kkgsa">1.00<br /><span>元</span></div>
+        </li>
+        <li>
+          <div class="kkgsa">1.00<br /><span>元</span></div>
+        </li>
+        <li>
+          <div class="kkgsa">1.00<br /><span>元</span></div>
+        </li>
+      </ul>
+      <ul class="jr_list_ul">
+        <li>
+          <div class="kkgsa">1.00<br /><span>元</span></div>
+        </li>
+        <li>
+          <div class="kkgsa">1.00<br /><span>元</span></div>
+        </li>
+        <li>
+          <div class="kkgsa">1.00<br /><span>元</span></div>
+        </li>
+      </ul>
+      <ul class="jr_list_ul">
+        <li>
+          <div class="kkgsa">1.00<br /><span>元</span></div>
+        </li>
+        <li>
+          <div class="kkgsa">1.00<br /><span>元</span></div>
+        </li>
+        <li>
+          <div class="kkgsa">1.00<br /><span>元</span></div>
+        </li>
+      </ul>
+    </div>
+    <div class="czqy">
+      <input class="srje_input" type="text" name="" value="" placeholder="请至少充值0.1元以上的金额">
+      <div class="yhxy">
+        点击立即支付代表阅读并同意<a>《用户购买协议》</a>
+      </div>
+      <div class="chongzhi">充值</div>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+
+<script>
+  $('.recharge_butt').click(function(event) {
+    $('.zhezhao').css('display','block');
+    $('.tck').css('bottom','0');
+  });
+  $('.zhezhao').click(function(event) {
+    $(this).css('display','none');
+    $('.tck').css('bottom','-20rem');
+  });
+  $('.jr_list_ul li').click(function(event) {
+    $(this).addClass('kituy');
+    $(this).siblings().removeClass('kituy');
+    $(this).parents().siblings().find('li').removeClass('kituy');
+  });
+</script>
+
+
+
+
+</div>
+
+</body>
+
+
+</html>

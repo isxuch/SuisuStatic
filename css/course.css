@@ -26,7 +26,7 @@
 }
 .study_li_l_t{
   width: 100%;
-  height: 5.3rem;
+  /*height: 5.3rem;*/
 }
 .add_jing_title{
   line-height: 1.0rem;
@@ -38,18 +38,20 @@
 }
 .study_li_l_b{
   width: 100%;
-  height: 1.2rem;
+  font-size: 0.5rem;
+  color: #999;
+  margin-top: 0.85rem;
   display: flex;
   flex-flow: row wrap;
-  color: #999;
   justify-content: space-between;
 }
-.study_li_l_b_l{}
-.gmrs_sp{
-  margin-left: 0.3rem;
+.study_li_l_b_l{
+  color: #999;
 }
-.study_li_l_b_r{
-  text-align: right;
+.study_li_l_b_r span{
+  background-color: #F3F5F9;
+  color: #FFB57E;
+  padding: 0.1rem 0.2rem;
 }
 .gm_price{
   font-size: 0.9rem;

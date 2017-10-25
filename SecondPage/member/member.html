@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="viewport" content="user-scalable=no, width=device-width" />
+<meta name=”viewport” content=”user-scalable=no”/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+
+<link type="text/css" rel="stylesheet" href="../../css/public.css">
+<link type="text/css" rel="stylesheet" href="../../css/member.css">
+
+<title>会员购买</title>
+
+<script type="text/javascript">
+
+(function (doc, win) {
+    var _root = doc.documentElement,
+        resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        resizeCallback = function () {
+            var clientWidth = _root.clientWidth,
+                fontSize = 20;
+            if (!clientWidth) return;
+            if(clientWidth < 640) {
+                fontSize = 20 * (clientWidth / 320);
+            } else {
+                fontSize = 20 * (640 / 320);
+            }
+            _root.style.fontSize = fontSize + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvent, resizeCallback, false);
+    doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+})(document, window);
+
+</script>
+
+</head>
+
+<body>
+
+<div class="zhuti">
+
+  <div class="content">
+
+    <!-- 会员剩余时间 -->
+    <div class="recharge">
+      <div class="recharge_t">会员剩余时间</div>
+      <div class="yuer">
+        <div class="yuer_l">91</div>
+        <div class="yuer_r">天</div>
+      </div>
+    </div>
+
+    <!-- 会员权益 -->
+    <div class="member_qy">
+      <p>会员权益</p>
+      <p>1. 会员有效期内，您可免费学习由官方出品的所有课程</p>
+      <p>2. 会员有效期内，您学习非官方出品的课程可享受会员折扣</p>
+      <p>3. 会员有效期内，您提交的作业、文章，将优先接受导师点评</p>
+    </div>
+
+    <!-- 会员购买 -->
+    <div class="member_buy">
+      <div class="member_buy_l">
+        会员购买<span>365元/年</span>
+      </div>
+      <div class="member_buy_r">
+        <div class="member_buy_r_l">
+          1
+        </div>
+        <div class="member_buy_r_r">
+          <div class="member_buy_r_r_l">
+            -
+          </div>
+          <div class="member_buy_r_r_r">
+            +
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 购买协议 -->
+    <div class="gmxy">点击立即支付代表阅读并同意<a>《购买协议》</a></div>
+
+    <!-- 购买按钮 -->
+    <div class="gman">立即支付</div>
+
+  </div>
+
+</div>
+
+</body>
+
+
+</html>

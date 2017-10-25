@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="viewport" content="user-scalable=no, width=device-width" />
+<meta name=”viewport” content=”user-scalable=no”/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+
+<link type="text/css" rel="stylesheet" href="../../css/public.css">
+<link type="text/css" rel="stylesheet" href="../../css/system_msg.css">
+
+<title>系统消息</title>
+
+<script type="text/javascript">
+
+(function (doc, win) {
+    var _root = doc.documentElement,
+        resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        resizeCallback = function () {
+            var clientWidth = _root.clientWidth,
+                fontSize = 20;
+            if (!clientWidth) return;
+            if(clientWidth < 640) {
+                fontSize = 20 * (clientWidth / 320);
+            } else {
+                fontSize = 20 * (640 / 320);
+            }
+            _root.style.fontSize = fontSize + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvent, resizeCallback, false);
+    doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+})(document, window);
+
+</script>
+
+</head>
+
+<body>
+
+<div class="zhuti">
+
+  <div class="content">
+
+  <!-- 系统消息 -->
+
+  <div class="system_msg">
+    <!-- 购买类消息 -->
+    <ul class="system_msg_ul">
+      <li>
+        <div class="system_msg_li_l">
+          <img src="../../images/mine.png" alt="">
+        </div>
+        <div class="system_msg_li_r">
+          <div class="msg_title">
+            你所购买的<span>《人人都需要的阅读与写作》</span>我是标题我是标题我是标题我是标题我是标题
+          </div>
+          <div class="msg_time">
+              10-23  <span>18:13</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- 禁言 -->
+    <ul class="system_msg_ul">
+      <li>
+        <div class="system_msg_li_l">
+          <img src="../../images/mine.png" alt="">
+        </div>
+        <div class="system_msg_li_r">
+          <div class="msg_title">
+            由于你涉及违规，官方禁言你一个小时!
+          </div>
+          <div class="msg_time">
+              10-23  <span>18:13</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- 开课提醒 -->
+    <ul class="system_msg_ul">
+      <li>
+        <div class="system_msg_li_l">
+          <img src="../../images/mine.png" alt="">
+        </div>
+        <div class="system_msg_li_r">
+          <div class="kktx_by">开课提醒</div>
+          <div class="msg_title">
+            嗨，还有7天你报名的课程就开始!
+          </div>
+          <div class="xxkc">学习课程：如何快速提高写作技巧</div>
+          <div class="xxkc">开课时间：2017-10-12 17:20</div>
+          <div class="kk_time">
+            <div class="kk_time_l">
+              10-23  <span>18:13</span>
+            </div>
+            <div class="kk_time_r">
+              查看详情
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- 提交类型提醒 -->
+    <ul class="system_msg_ul">
+      <li>
+        <div class="system_msg_li_l">
+          <img src="../../images/mine.png" alt="">
+        </div>
+        <div class="system_msg_li_r">
+          <div class="msg_title">
+            你所购买的<span>《人人都需要的阅读与写作》</span>我是标题我是标题我是标题我是标题我是标题
+          </div>
+          <div class="kk_time">
+            <div class="kk_time_l">
+              10-23  <span>18:13</span>
+            </div>
+            <div class="kk_time_r">
+              查看详情
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- 悬浮回首页 -->
+  <div class="xuanfu">
+    <div class="xuanfu_l">
+      <img src="../../images/xuanfu.png" alt="">
+    </div>
+    <div class="xuanfu_r">首页</div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+
+
+</html>

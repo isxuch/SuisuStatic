@@ -1,3 +1,6 @@
+.content{
+  margin: 0;
+}
 /*加精*/
 .discover_add_jing{
   width: 14.8rem;
@@ -29,6 +32,7 @@
   margin-left: 0.6rem;
   padding-bottom: 0.85rem;
   border-bottom: 0.05rem solid #eaeaea;
+  color: #999;
 }
 .discover_add_jing_li_r_t{
   width: 100%;
@@ -101,4 +105,15 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
+}
+
+.xjts{
+  margin-left: 0.6rem;
+  background-color: #F3F5F9;
+  color: #FFB57E;
+  padding: 0.1rem 0.2rem;
+}
+
+.discover_add_jing_li_r_t_r img{
+  width: 0.6rem;
 }

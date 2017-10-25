@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="viewport" content="user-scalable=no, width=device-width" />
+<meta name=”viewport” content=”user-scalable=no”/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+
+<link type="text/css" rel="stylesheet" href="../../css/public.css">
+<link type="text/css" rel="stylesheet" href="../../css/assignment02.css">
+
+<title>我的作业--内页</title>
+
+<script type="text/javascript">
+
+(function (doc, win) {
+    var _root = doc.documentElement,
+        resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        resizeCallback = function () {
+            var clientWidth = _root.clientWidth,
+                fontSize = 20;
+            if (!clientWidth) return;
+            if(clientWidth < 640) {
+                fontSize = 20 * (clientWidth / 320);
+            } else {
+                fontSize = 20 * (640 / 320);
+            }
+            _root.style.fontSize = fontSize + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvent, resizeCallback, false);
+    doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+})(document, window);
+
+</script>
+
+</head>
+
+<body>
+
+<div class="zhuti">
+
+  <div class="content">
+
+  <!-- 编辑保存过的作业 -->
+  <div class="bjc_work">
+    <ul class="bjc_work_ul">
+      <li>
+        <div class="zy_ari_title">
+          <div class="zy_ari_title_l"></div>
+          <div class="zy_ari_title_r">
+            <div class="zy_ari_title_r_l">从地基到大厦，优质爆文如何打造？</div>
+            <div class="zy_ari_title_r_r">20-24 14:40</div>
+          </div>
+        </div>
+        <div class="zdyzt">自定主题，制作一个写作大纲，并书写成文。</div>
+        <div class="qishu">
+          <div class="qishu_l">
+            <div class="qishu_l_l"></div>
+            <div class="qishu_l_r">3期2班</div>
+          </div>
+          <div class="qishu_r">继续编辑</div>
+        </div>
+      </li>
+      <li>
+        <div class="zy_ari_title">
+          <div class="zy_ari_title_l"></div>
+          <div class="zy_ari_title_r">
+            <div class="zy_ari_title_r_l">从地基到大厦，优质爆文如何打造？</div>
+            <div class="zy_ari_title_r_r">20-24 14:40</div>
+          </div>
+        </div>
+        <div class="zdyzt">自定主题，制作一个写作大纲，并书写成文。</div>
+        <div class="qishu">
+          <div class="qishu_l">
+            <div class="qishu_l_l"></div>
+            <div class="qishu_l_r">3期2班</div>
+          </div>
+          <div class="qishu_r">继续编辑</div>
+        </div>
+      </li>
+      <li>
+        <div class="zy_ari_title">
+          <div class="zy_ari_title_l"></div>
+          <div class="zy_ari_title_r">
+            <div class="zy_ari_title_r_l">从地基到大厦，优质爆文如何打造？</div>
+            <div class="zy_ari_title_r_r">20-24 14:40</div>
+          </div>
+        </div>
+        <div class="zdyzt">自定主题，制作一个写作大纲，并书写成文。</div>
+        <div class="qishu">
+          <div class="qishu_l">
+            <div class="qishu_l_l"></div>
+            <div class="qishu_l_r">3期2班</div>
+          </div>
+          <div class="qishu_r wbj">未编辑</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    <!-- 悬浮回首页 -->
+    <div class="xuanfu">
+      <div class="xuanfu_l">
+        <img src="../../images/xuanfu.png" alt="">
+      </div>
+      <div class="xuanfu_r">首页</div>
+    </div>
+
+  </div>
+
+
+</div>
+
+</body>
+
+
+</html>
